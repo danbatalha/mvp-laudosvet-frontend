@@ -210,7 +210,7 @@ function cadastrarNovoPet() {
 
 /*
   --------------------------------------------------------------------------------------
-  Função para remover um item da lista de acordo com o click no botão close
+  Função para remover um item da lista
   --------------------------------------------------------------------------------------
 */
 
