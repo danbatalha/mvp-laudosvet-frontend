@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title>LaudosVet</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <img src="img/logo.png" alt="LaudosVet Logo" height="96px">
+            <h1>LaudosVet</h1>
+        </div>
+    </header>
+
+    <section class="cadastro-de-tutores">
+        <div class="tutores-cadastro-e-modal-contaier">
+            <div class="titulo">
+                <img src="img/usuario.png" alt="Tutor Logo" height="36px">
+                <h3>Cadastrar tutor:</h3>
+            </div>
+            <input type="text" id="tutorNomeInput" placeholder="Nome">
+            <input type="text" id="tutorTelefoneInput" placeholder="Telefone">
+            <button onclick="cadastrarNovoTutor()">+</button>
+            <button class='ver-tutores-cadastrados-button' onclick="abrirListagemTutores()">Ver Tutores
+                Cadastrados</button>
+        </div>
+
+        <dialog class="modal-de-tutores-cadastrados" id="modalListagemTutores">
+            <h4>Lista de tutores cadastrados</h4>
+
+            <table class="tabela-tutores">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>Telefone</th>
+                        <th>Pets</th>
+                    </tr>
+                </thead>
+                <tbody id="listaTutoresBody">
+                </tbody>
+            </table>
+
+            <div class="modal-botoes">
+                <button onclick="document.getElementById('modalListagemTutores').close()">Fechar</button>
+            </div>
+        </dialog>
+    </section>
+
+    <section class="pets-lista-e-cadastro">
+        <div class="pet-cadastro-input-container">
+            <h4>Cadastrar pet:</h4>
+            <input type="text" id="petNomeInput" placeholder="Nome">
+
+            <select type="text" id="petEspecieSelect" placeholder="Espécie">
+                <option value="">Escolha uma espécie</option>
+                <option value="CACHORRO">Cachorro</option>
+                <option value="GATO">Gato</option>
+            </select>
+
+            <input type="text" id="petRacaInput" placeholder="Raça">
+
+            <select type="text" id="petTutorSelect" placeholder="Tutor">
+                <option value="">Lista de tutores cadastrados</option>
+            </select>
+            <button onclick="cadastrarNovoPet()">+</button>
+        </div>
+        <h3>Pets cadastrados</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome do Pet</th>
+                    <th>Espécie</th>
+                    <th>Raça</th>
+                    <th>Tutor</th>
+                </tr>
+            </thead>
+
+            <tbody id="listaPetsBody">
+            </tbody>
+        </table>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>

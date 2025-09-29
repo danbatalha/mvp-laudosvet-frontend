@@ -1,0 +1,293 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #F0F2F5;
+    -webkit-font-smoothing: antialiased;
+}
+
+body,
+input,
+textarea,
+button {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+    font-weight: 700;
+    color: #353535;
+}
+
+button {
+    cursor: pointer;
+}
+
+header {
+    background: #59AFC5;
+}
+
+.header-content {
+    max-width: 1220px;
+    margin: 0 auto;
+
+    padding: 24px 12px 76px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    h1 {
+        font-size: 40px;
+    }
+}
+
+.cadastro-de-tutores {
+    max-width: 1318px;
+    margin: 0 auto;
+    background: #FFFFFF;
+    box-shadow: 2px 2px 2px #303030;
+    border-radius: 4px;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 12px;
+    margin-top: -52px;
+    padding: 18px 24px;
+
+    h3 {
+        margin: 0px;
+    }
+}
+
+.titulo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0px;
+}
+
+.tutores-cadastro-e-modal-contaier {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 12px;
+
+    input {
+        width: 20%;
+        height: 36px;
+        border-radius: 4px;
+        padding: 0px 12px;
+
+        border: 1px solid #d7d7d7;
+        background: #e7e9ee;
+
+        font-weight: 400;
+        font-size: 14px;
+        color: #282828;
+    }
+
+    button {
+        font-size: 24px;
+        color: #fff;
+        background: #f68c19;
+        border: 0;
+        padding: 0 24px;
+        border-radius: 4px;
+        height: 36px;
+
+        transition: filter 0.2s;
+
+        &:hover {
+            filter: brightness(0.9);
+        }
+    }
+
+    .ver-tutores-cadastrados-button {
+        font-size: 16px;
+        font-weight: 600;
+        background: #fff;
+        color: #f68c19;
+        border: 0;
+        margin: 0;
+
+        transition: filter 0.2s;
+
+        &:hover {
+            filter: brightness(0.9);
+        }
+    }
+}
+
+.pets-lista-e-cadastro {
+    max-width: 1318px;
+    margin: 36px auto;
+    background: #FFFFFF;
+    box-shadow: 2px 2px 2px #303030;
+    border-radius: 4px;
+
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 18px 24px;
+
+    table {
+        table-layout: fixed;
+        width: 100%;
+        border-spacing: 0 6px;
+
+        th {
+            color: #282828;
+            font-weight: 600;
+            padding: 12px 24px;
+            text-align: left;
+        }
+
+        td {
+            font-size: 14px;
+            font-weight: 400;
+            padding: 12px 24px;
+            border: 0;
+            background: #FFFFFF;
+            color: #282828;
+            border-radius: 4px;
+        }
+
+        &:nth-child(4) {
+            cursor: help;
+        }
+
+        button {
+            font-size: 16px;
+            color: #fff;
+            background: #f68c19;
+            border: 0;
+            padding: 0 24px;
+            border-radius: 4px;
+            height: 24px;
+
+            transition: filter 0.2s;
+
+            &:hover {
+                filter: brightness(0.9);
+            }
+        }
+    }
+}
+
+.pet-cadastro-input-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    gap: 12px;
+    text-wrap: nowrap;
+
+    input,
+    select {
+        width: 20%;
+        height: 36px;
+        border-radius: 4px;
+        padding: 0px 12px;
+
+        border: 1px solid #d7d7d7;
+        background: #e7e9ee;
+
+        font-weight: 400;
+        font-size: 14px;
+        color: #282828;
+    }
+
+    button {
+        font-size: 24px;
+        color: #fff;
+        background: #f68c19;
+        border: 0;
+        padding: 0 24px;
+        border-radius: 4px;
+        height: 36px;
+
+        transition: filter 0.2s;
+
+        &:hover {
+            filter: brightness(0.9);
+        }
+    }
+}
+
+.ver-tutores-cadastrados-button {
+    font-size: 16px;
+    font-weight: 600;
+    background: #fff;
+    color: #f68c19;
+    border: 0;
+    margin: 0;
+
+    transition: filter 0.2s;
+
+    &:hover {
+        filter: brightness(0.9);
+    }
+}
+
+.modal-de-tutores-cadastrados {
+    background-color: #FFFFFF;
+    border: 1px solid #282828;
+    border-radius: 4px;
+    width: 50%;
+
+    table {
+        table-layout: fixed;
+        width: 100%;
+        border-spacing: 0 6px;
+
+        th {
+            color: #282828;
+            font-weight: 600;
+            padding: 12px 24px;
+            text-align: left;
+        }
+
+        td {
+            font-size: 14px;
+            font-weight: 400;
+            padding: 12px 24px;
+            border: 0;
+            background: #FFFFFF;
+            color: #282828;
+            border-radius: 4px;
+        }
+
+        &:nth-child(4) {
+            cursor: help;
+        }
+    }
+}
+
+.modal-botoes {
+    display: flex;
+    justify-content: end;
+
+    button {
+        font-size: 16px;
+        background: #fff;
+        color: #f68c19;
+        border: 1px solid #f68c19;
+        border-radius: 4px;
+        padding: 8px 12px;
+
+        transition: filter 0.2s;
+
+        &:hover {
+            filter: brightness(0.9);
+        }
+    }
+}
